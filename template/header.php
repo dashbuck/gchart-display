@@ -16,8 +16,5 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header class="tc pt2 cover bg-center w-100 bg-light-blue">
-        <a href="/" class="link black bg-animate hover-bg-white mt2 mb0 fw1 f1" property="title">Google Charts</a>
-        <nav class="bb b--near-black bw2 tc center mt2">
-          <a class="link black bg-animate hover-bg-white dib pa2 ph4-l" href="#">Home</a>
-        </nav>
+          <!--nav goes here if I need one later-->
         </header>
