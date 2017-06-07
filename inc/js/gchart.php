@@ -22,10 +22,10 @@
   // draws it.
   function drawVisualization() {
     var query = new google.visualization.Query(
-        'http://spreadsheets.google.com/tq?key=pCQbetd-CptGXxxQIG7VFIQ&pub=1');
+        'https://docs.google.com/spreadsheets/d/1TWQ11MrXIGnVjoc76iV8uI9GEUZCR9a-R4nMQWil52k/gviz/tq?headers=1');
 
     // Apply query language statement.
-    query.setQuery('SELECT A,D WHERE D > 100 ORDER BY D');
+    query.setQuery('SELECT A,C ORDER BY A');
 
     // Send the query with a callback function.
     query.send(handleQueryResponse);
