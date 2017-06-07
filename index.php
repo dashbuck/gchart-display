@@ -6,7 +6,7 @@
   <!--We have a chart on this page-->
   <? include_once($path."/gchart-display/inc/js/gchart.php"); ?>
   <!--Div that will hold the chart-->
-    <div id="chart_div" class="ba b--near-black bg-white"></div>
+    <div id="visualization" class="ba b--near-black bg-white"></div>
 </article>
 <?php
   include_once($path."/gchart-display/template/footer.php");
