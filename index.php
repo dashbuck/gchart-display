@@ -9,6 +9,7 @@
     <div id="poetry-dashboard" class="ba b--near-black bg-white">
       <div id="poetry-search" class="center w-50 pa2"></div>
       <div id="poetry-table" class="center w-50 ba b--near-black"></div>
+      <div id="poetry-pie"></div>
     </div>
 </article>
 <?php

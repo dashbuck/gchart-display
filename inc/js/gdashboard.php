@@ -38,7 +38,7 @@ function handleQueryResponse(response) {
     'options': {
       'filterColumnLabel': 'Poem',
       'matchType': 'any',
-      'ui': {'label': 'Search', 'labelSeparator': ':'},
+      'ui': {'label': 'Give me a poem about'},
     }
   });
 
@@ -52,15 +52,37 @@ function handleQueryResponse(response) {
       'width': '100%',
       'height': '100%',
       'page': 'enable',
-      'pageSize': '3',
+      'pageSize': '1',
+      'alternatingRowStyle': 'false',
+
       'cssClassNames': {
         headerRow: 'f2',
-        tableRow: 'f5',
-        oddTableRow: 'f5'
+        tableRow: 'f4',
+        oddTableRow: 'f4'
       }
     }
   });
 
+/* TODO: Y U NO WURK?
+
+  //To make the pie chart maker happy we've got to mess with the data a bit, which means a chance to practice aggregation!
+
+  var pieTable = google.visualization.data.group(
+    data,
+    [{'column': 1, 'type': 'string', label: 'Number of Lines'}],
+    [{'column': 1, 'aggregation': google.visualization.data.count, 'type': 'number'}]
+  );
+
+  var poetryPie = new google.visualization.ChartWrapper({
+    'chartType': 'PieChart',
+    'containerId': 'poetry-pie',
+    'options': {
+      'width': '100%',
+      'height': '100%',
+    }
+  });
+
+*/
 
   // Establish dependencies, declaring that 'poetrySearch' drives 'poetryTable',
   // so that the table will only display entries that are let through
