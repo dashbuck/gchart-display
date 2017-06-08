@@ -1,7 +1,7 @@
 <!--Load the AJAX API-->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
-  // Load the Visualization API and the corechart package; set a callback to run when the API is loaded.
+  // Load the Visualization API and the corechart package
   google.charts.load('current', { packages: [ 'corechart', 'table'] });
 
 //Set callbacks to run when the API is loaded
